@@ -1,0 +1,35 @@
+ТУТ ФУНКЦИИ WORDPRESS https://wp-kama.ru/functions
+ТУТ ФУНКЦИИ WOOCOMMERCE https://docs.woocommerce.com/wc-apidocs/package-WooCommerce.Functions.html
+
+
+1. Геренация базовых файлов для шаблона вордпресс https://underscores.me/
+2. Переносим все файлы в папку шаблона удаляем ненужные файлы
+3. Создаем каталог templates в папк шаблона
+4. main-page.php для главной
+5. В inc создаем файл для стилей enqueue-script-style.php
+functions.php подрубаем require get_template_directory() . '/inc/enqueue-script-style.php';
+
+6. Создаем каталог assets - фронтенд
+7. В нем подпапки fonts, css, js, image
+8. Закоментить style.css
+9. Создаем главную
+Делаем страницу в админке для основного текста главной - назначаем ее главной раздел чтение
+в папке templates добавляем код html для главной и добавляем наш шаблон
+для вывода содержимого страницы в коде шаблона используем:
+
+<?php while( have_posts() ) : the_post();
+                        $more = 1; // отображаем полностью всё содержимое поста
+                        the_title(); // эта функция выводит заголовок
+                        the_content(); // выводим контент
+                    endwhile; ?>
+10. Для вывода различных слайдов и плагинов будем использовать wp mvc установим его через админку
+
+
+
+
+
+10. для произвольных полей https://carbonfields.net/ - фреймворк для wp (пока не понял что за хз)
+скачиваем его тут версия 2.2.0 https://github.com/sashaxxd/E-Store-Theme тут 2.1.0
+https://wp-kama.ru/id_8542/carbon-fields-obzor-plagina-i-nachalo-raboty.html#bez-ispolzovaniya-composer
+тут пояснение (это плагин для создания произвольных полей - php namespace oop)
+https://carbonfields.net/zip/latest/ тут можно скачать последнюю версию
