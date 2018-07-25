@@ -159,8 +159,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-
+/**
+ * Cкрипты стили
+ */
 require get_template_directory() . '/inc/enqueue-script-style.php';
+/**
+ * Меню
+ */
+require get_template_directory() . '/inc/menu.php';
 
 // Отключаем jQuery WordPress
 

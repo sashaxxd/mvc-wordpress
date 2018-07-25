@@ -8,8 +8,8 @@
          effect: 'none',
          direction: '',
          pagination: true,
-         pagination_img_default: 'images/slide_default.png',
-         pagination_img_active: 'images/slide_active.png',
+         pagination_img_default: 'wp-content/themes/mvc/assets/images/slide_default.png',
+         pagination_img_active: 'wp-content/themes/mvc/assets/images/slide_active.png',
          fullscreen: 4,
          maxWidth: 1920,
          effectlength: 2000
@@ -22,5 +22,5 @@
       {
          $('#SlideShow1').slideshow('nextimage');
       });
-      $("#modalka").modal('show');
+
    });
